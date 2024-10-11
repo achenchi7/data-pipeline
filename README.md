@@ -1,5 +1,5 @@
 # Data Pipeline Documentation
-This project sets up a real-time data pipeline using Apache Kafka, Apache Spark, Cassandra, and Apache NiFi to process and store streaming data. The pipeline ingests data, processes it using Spark, and then stores the processed data in a Cassandra database for future analysis.
+This project sets up a real-time data pipeline using Apache Kafka, Apache Spark, Cassandra, and Apache NiFi to process and store streaming data. The pipeline ingests data, processes it using Spark and apache, and then stores the processed data in a Cassandra database for future analysis.
 
 ### Tech stack
 - **Kafka:** A distributed event streaming platform that ingests and publishes streaming data.
@@ -9,15 +9,15 @@ This project sets up a real-time data pipeline using Apache Kafka, Apache Spark,
 - **Apache airflow:**
 
 ### Docker compose configuration
-The docker-compose.yml file orchestrates the setup of the various services required by the data pipeline. It spins up Kafka, Zookeeper, Spark, Cassandra, and Airflow in separate Docker containers, allowing each service to run in isolation while being able to communicate with each other over the defined network.
+The `docker-compose.yml` file orchestrates the setup of the various services required by the data pipeline. It spins up `Kafka`, `Zookeeper`, `Spark`, `Cassandra`, and `Airflow` in separate Docker containers, allowing each service to run in isolation while being able to communicate with each other over the defined network.
 
 #### Key components
-**Kafka Broker:** Set up to handle data ingestion. Kafka receives messages that will be processed by Spark.
-**Zookeeper:** Coordinates and manages Kafka brokers.
-**Schema Registry:** Provides a centralized repository for storing Avro schemas that Kafka will use.
-**Spark Master and Worker:** Spark's master node manages worker nodes that process data in parallel.
-**Cassandra:** Stores the processed data.
-**NiFi:** Enables data flow management for complex data routing between components.
+- **Kafka Broker:** Set up to handle data ingestion. Kafka receives messages that will be processed by Spark.
+- **Zookeeper:** Coordinates and manages Kafka brokers.
+- **Schema Registry:** Provides a centralized repository for storing Avro schemas that Kafka will use.
+- **Spark Master and Worker:** Spark's master node manages worker nodes that process data in parallel.
+- **Cassandra:** Stores the processed data.
+- **NiFi:** Enables data flow management for complex data routing between components.
 
 #### The architecture
 Below is a visualization of the data pipeline architecture
