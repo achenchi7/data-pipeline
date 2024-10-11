@@ -21,7 +21,7 @@ The `docker-compose.yml` file orchestrates the setup of the various services req
 
 #### The architecture
 Below is a visualization of the data pipeline architecture
-![data pipeline architecture]()
+![data pipeline architecture](https://github.com/achenchi7/data-pipeline/blob/main/pipeline-architecture.png)
 
 
 ### Code Breakdown
