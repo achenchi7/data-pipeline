@@ -2,11 +2,11 @@
 This project sets up a real-time data pipeline using Apache Kafka, Apache Spark, Cassandra, and Apache NiFi to process and store streaming data. The pipeline ingests data, processes it using Spark, and then stores the processed data in a Cassandra database for future analysis.
 
 ### Tech stack
-**Kafka:** A distributed event streaming platform that ingests and publishes streaming data.
-**Spark Streaming:** Real-time data processing engine that processes data ingested from Kafka.
-**Cassandra:** A NoSQL database that stores the processed data.
-**NiFi:** Manages data flow and integrates different systems.
-**Apache airflow:**
+- **Kafka:** A distributed event streaming platform that ingests and publishes streaming data.
+- **Spark Streaming:** Real-time data processing engine that processes data ingested from Kafka.
+- **Cassandra:** A NoSQL database that stores the processed data.
+- **NiFi:** Manages data flow and integrates different systems.
+- **Apache airflow:**
 
 ### Docker compose configuration
 The docker-compose.yml file orchestrates the setup of the various services required by the data pipeline. It spins up Kafka, Zookeeper, Spark, Cassandra, and Airflow in separate Docker containers, allowing each service to run in isolation while being able to communicate with each other over the defined network.
